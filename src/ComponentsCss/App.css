@@ -1,0 +1,90 @@
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+
+  }
+  100% {
+
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, black, rgb(57, 78, 95), rgb(4, 4, 125), black);
+  background-size: 600% 600%; /* bada size for smooth movement */
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0%{
+    transform: scale(5);
+    opacity: 0;
+  }100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+ 
+/* Project section */
+.allProject .hello{
+    visibility: hidden;
+  }
+
+.allProject:hover{
+  transform: rotateY(180deg);
+  background-color: whitesmoke;
+  transition: ease-in-out 0.9s;
+
+  .hello{
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+}
+
+.projectName{
+  animation: fadeIn 3s linear;
+}
+
+.projects{
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* strap */
+.strap{
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  animation: moveForward forwards 15s infinite;
+}
+
+/* Animations  */
+@keyframes moveForward {
+  0%{
+    transform: translateX(360px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 768px){
+  .projectsDiv{
+    padding: 5px 10px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .projectName{
+    position: relative;
+    font-size: 10vw;
+  }
+  .Form{
+    width: 100%;
+  }
+}
+
