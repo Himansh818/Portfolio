@@ -1,8 +1,25 @@
 import React, { useState, useEffect } from 'react'
 import '../ComponentsCss/Hero.css'
+import { ToastContainer, toast } from 'react-toastify';
 import About from './About'
 
 const Hero = () => {
+
+  const handleDownload =()=>{
+
+    toast.success('🦄 Downloading CV..!', {
+    position: "top-right",
+    autoClose: 4000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+  }
+
+
   const roles = [
     'React ',
     'Frontend ',
@@ -29,6 +46,20 @@ const Hero = () => {
   return (
     <>
     
+
+    <ToastContainer
+          position="top-right"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          />
+
     <div className='text-4xl h-screen justify-center items-center text-white flex flex-col gap-4'>
       <h3 className='t1 text-5xl font-extrabold text-center'>Himansh Chaudhary</h3>
 
@@ -53,11 +84,12 @@ const Hero = () => {
         </span>
       </h4>
 
-      <button
+
+
+      <a href='/cv/Resume.pdf'
+      download={'HimanshChaudhary_CV.pdf'}
       className='relative top-5 cursor-pointer text-xl font-bold px-5 py-2 bg-cyan-600 text-white rounded-2xl hover:bg-cyan-400 active:scale-90'
-      onClick={()=>{
-        alert('downloading cv !')
-      }}>Download CV</button>
+      onClick={handleDownload}>Download CV</a>
     </div>
 
     </>
