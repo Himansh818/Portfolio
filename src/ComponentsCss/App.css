@@ -37,6 +37,7 @@
   transform: rotateY(180deg);
   background-color: whitesmoke;
   transition: ease-in-out 0.9s;
+  cursor: pointer;
 
   .hello{
     visibility: visible;
@@ -55,22 +56,21 @@
 }
 
 /* strap */
-.strap{
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  animation: moveForward forwards 15s infinite;
+.strap {
+  display: flex;
+  white-space: nowrap; /* single line content ke liye */
+  animation: scroll 10s linear infinite;
 }
 
-/* Animations  */
-@keyframes moveForward {
-  0%{
-    transform: translateX(360px);
+@keyframes scroll {
+  0% {
+    transform: translateX(0%); /* start screen ke bahar right se */
   }
-  100%{
-    transform: translateX(0px);
+  100% {
+    transform: translateX(-100%); /* end screen ke bahar left me */
   }
 }
+
 
 @media (max-width: 768px){
   .projectsDiv{

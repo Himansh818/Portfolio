@@ -4,19 +4,35 @@ import React from 'react'
 const Project = () => {
   return (
     <div className='projects h-auto  w-full text-2xl flex justify-center items-center text-black '>
-      <div className='projectsDiv  flex flex-wrap py-10 gap-10 w-9/15 justify-between relative top-40 px-10'>
+      <div className='projectsDiv  flex flex-wrap py-10 gap-10 w-auto justify-around relative top-40 px-10'>
 
-        <div className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-80 bg-white/20 backdrop-blur-md shadow-md rounded-2xl p-5 border-2 border-white'>
-          <h1 className='text-xl font-bold text-red-500 font-serif rotate-y-180 hello'>Lorem, ipsum dolor sit amet consectetur sentium voluptate amet ullam velit! Quasi labore cupiditate eius itaque praesentium aspernatur quibusdam?</h1>
+        <div 
+        onClick={() => window.open('https://himansh818.github.io/Tic-Tac-Toe-Game/', '_blank')}
+        className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-96 bg-white/20 backdrop-blur-md shadow-md rounded-2xl border-2 border-white'>
+          <img 
+          className=' hello rotate-y-180 h-full w-full bg-cover'
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREk0dxNniBqDp55HxX9FzkmaBCT7T3c9Xvw&s" alt="" />
         </div>
-        <div className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-80 bg-white/20 backdrop-blur-md shadow-md rounded-2xl p-5 border-2 border-white'>
-          <h1 className='text-xl font-bold text-red-500 font-serif rotate-y-180 hello'>Lorem, ipsum dolor sit amet consectetur sentium voluptate amet ullam velit! Quasi labore cupiditate eius itaque praesentium aspernatur quibusdam?</h1>
+        <div 
+        onClick={() => window.open('https://himansh818.github.io/Tic-Tac-Toe-Game/', '_blank')}
+        className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-96 bg-white/20 backdrop-blur-md shadow-md rounded-2xl border-2 border-white'>
+          <img 
+          className=' hello rotate-y-180 h-full w-full bg-cover'
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREk0dxNniBqDp55HxX9FzkmaBCT7T3c9Xvw&s" alt="" />
         </div>
-        <div className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-80 bg-white/20 backdrop-blur-md shadow-md rounded-2xl p-5 border-2 border-white'>
-          <h1 className='text-xl font-bold text-red-500 font-serif rotate-y-180 hello'>Lorem, ipsum dolor sit amet consectetur sentium voluptate amet ullam velit! Quasi labore cupiditate eius itaque praesentium aspernatur quibusdam?</h1>
+        <div 
+        onClick={() => window.open('https://himansh818.github.io/Tic-Tac-Toe-Game/', '_blank')}
+        className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-96 bg-white/20 backdrop-blur-md shadow-md rounded-2xl border-2 border-white'>
+          <img 
+          className=' hello rotate-y-180 h-full w-full bg-cover'
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREk0dxNniBqDp55HxX9FzkmaBCT7T3c9Xvw&s" alt="" />
         </div>
-        <div className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-80 bg-white/20 backdrop-blur-md shadow-md rounded-2xl p-5 border-2 border-white'>
-          <h1 className='text-xl font-bold text-red-500 font-serif rotate-y-180 hello'>Lorem, ipsum dolor sit amet consectetur sentium voluptate amet ullam velit! Quasi labore cupiditate eius itaque praesentium aspernatur quibusdam?</h1>
+        <div 
+        onClick={() => window.open('https://himansh818.github.io/Tic-Tac-Toe-Game/', '_blank')}
+        className='allProject flex justify-center items-center overflow-hidden flex-wrap  ease-in-out duration-150 hover:scale-105 h-80 w-96 bg-white/20 backdrop-blur-md shadow-md rounded-2xl border-2 border-white'>
+          <img 
+          className=' hello rotate-y-180 h-full w-full bg-cover'
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREk0dxNniBqDp55HxX9FzkmaBCT7T3c9Xvw&s" alt="" />
         </div>
 
       </div>

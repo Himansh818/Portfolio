@@ -27,7 +27,7 @@ const App = () => {
                 <Skills />
                 <Strap />
                 <div className='flex justify-center items-center flex-col' >
-                  <h1 className='projectName text-white lg:text-[250px] absolute font-extrabold '>PROJECTS</h1>
+                  <h1 className='projectName text-white lg:text-[200px] absolute font-extrabold '>PROJECTS</h1>
                   <Project />
                 </div>
                 <Footer />
