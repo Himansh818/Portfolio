@@ -18,7 +18,7 @@ const Strap = () => {
         <div className="c text-5xl font-extrabold">LeetCode</div>
         <div className="c text-5xl font-extrabold">FreeCodeCamp</div>
         <div className="c text-5xl font-extrabold">Vs Code</div>
-        <div className="c text-5xl font-extrabold">Canva</div>
+        <div className="c text-5xl font-extrabold">Canva</div>.
       </div>
       
     </div>
