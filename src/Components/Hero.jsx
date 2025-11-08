@@ -84,7 +84,8 @@ const Hero = () => {
         <a
           href="/cv/Resume.pdf"
           download={"HimanshChaudhary_CV.pdf"}
-          className="relative top-5 cursor-pointer text-xl font-bold px-5 py-2 bg-cyan-600 text-white rounded-2xl hover:bg-cyan-400 active:scale-90"
+          className="relative top-5 cursor-pointer text-xl hover:skew-2
+          font-bold px-5 py-2 bg-cyan-600 text-white rounded-2xl hover:bg-cyan-400 active:scale-90"
           onClick={handleDownload}
         >
           Download CV
