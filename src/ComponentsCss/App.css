@@ -49,6 +49,15 @@
   animation: fadeIn 3s linear;
 }
 
+/* .box{
+  opacity: 0;
+  transition: 600ms ease-in-out;
+}
+
+.box.show{
+  opacity: 1;
+} */
+
 .projects{
   overflow-y: auto;
   scrollbar-width: none;
