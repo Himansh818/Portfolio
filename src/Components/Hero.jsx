@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../ComponentsCss/Hero.css";
 import { ToastContainer, toast } from "react-toastify";
-import About from "./About";
 
 const Hero = () => {
   const handleDownload = () => {
@@ -82,8 +81,8 @@ const Hero = () => {
         </h4>
 
         <a
-          href="/cv/Resume.pdf"
-          download={"HimanshChaudhary_CV.pdf"}
+          href="/himansh.pdf"
+          download={"himansh.pdf"}
           className="relative top-5 cursor-pointer text-xl hover:skew-2
           font-bold px-5 py-2 bg-cyan-600 text-white rounded-2xl hover:bg-cyan-400 active:scale-90"
           onClick={handleDownload}
