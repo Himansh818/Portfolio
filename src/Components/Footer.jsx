@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" flex flex-wrap h-[80vh] w-full justify-center items-center text-white p-10 gap-28">
+    <footer className=" flex flex-wrap h-[80vh] w-full justify-center items-center text-white  gap-28">
       <form 
       id="form"
         onSubmit={(e) => {
           e.preventDefault();
         }}
-        className="Form h-full w-1/3 justify-around gap-2.5 p-4 bg-linear-to-br  from-cyan-800 to-blue-500 rounded-2xl flex flex-col"
+        className="Form h-full w-full justify-around gap-2.5 p-4 bg-white/20 backdrop-blur-md shadow-md  rounded-2xl flex flex-col"
       >
         <div className="flex flex-col">
           <label 
@@ -48,9 +48,7 @@ const Footer = () => {
         </button>
       </form>
 
-      <div className="font-extrabold flex flex-col justify-center items-center text-9xl">
-        Thank<span>You !</span>
-      </div>
+      
     </footer>
   );
 };
