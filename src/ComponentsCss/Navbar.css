@@ -6,4 +6,16 @@
     justify-items: center;
     align-items: center;
   }
+  .link{
+    display: none;
+  }
+  .connectBtn{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 15px;
+  }
 }
+.navbar{
+  height: 60px;
+    padding: 40px;
+  }
