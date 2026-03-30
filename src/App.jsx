@@ -40,7 +40,7 @@ useEffect(() => {
     // <Router>
       <div className="h-screen w-screen animated-gradient overflow-x-hidden relative">
         {/* Navbar always visible */}
-        <div className="navbar absolute top-0 w-full flex justify-center z-50">
+        <div className="navbar absolute top-0 w-full flex justify-center z-20">
           <Navbar />
         </div>
 

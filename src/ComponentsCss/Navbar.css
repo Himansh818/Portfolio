@@ -16,6 +16,7 @@
   }
 }
 .navbar{
-  height: 60px;
+    top: -10px;
+    height: 60px;
     padding: 40px;
   }

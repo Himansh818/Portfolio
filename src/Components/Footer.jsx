@@ -2,53 +2,63 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className=" flex flex-wrap h-[80vh] w-full justify-center items-center text-white  gap-28">
-      <form 
-      id="form"
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-        className="Form h-full w-full justify-around gap-2.5 p-4 bg-white/20 backdrop-blur-md shadow-md  rounded-2xl flex flex-col"
-      >
-        <div className="flex flex-col">
-          <label 
-          className="text-white font-semibold mb-1"
-          htmlFor="name">Name:</label>
-          <input
-            className="bg-white text-black px-4 py-2 rounded"
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
-        </div>
-        <div className="flex flex-col">
-          <label 
-          className="text-white font-semibold mb-1"
-          htmlFor="email">Email:</label>
-          <input
-            className="bg-white text-black px-4 py-2 rounded"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <textarea
-          className="h-1/3 w-full p-2 rounded bg-gray-200 text-gray-600"
-          name=""
-          id=""
-          placeholder="description"
-        ></textarea>
-        <button
-          type="submit"
-          className="p-5 relative left-1/3 bg-cyan-500 font-extrabold cursor-pointer w-fit rounded-2xl active:scale-90"
-        >
-          Send Email
-        </button>
-      </form>
+    <footer className="w-full bg-black text-white py-16 px-4 flex flex-col items-center">
 
-      
+      {/* Footer Heading */}
+      <h2 className="text-3xl font-bold mb-2 tracking-wide">Let's Work Together</h2>
+      <p className="text-gray-300 max-w-xl text-center mb-10">
+        Got a project or collaboration in mind? Feel free to reach out.
+      </p>
+
+      {/* Contact Card */}
+      <div className="w-full max-w-md bg-white/10 backdrop-blur-lg shadow-xl rounded-2xl p-6 flex flex-col gap-5">
+
+        {/* Name */}
+        <div className="flex flex-col">
+          <label className="font-semibold mb-1">Name</label>
+          <input
+            className="bg-white/80 text-black px-4 py-2 rounded-lg outline-none 
+                       focus:ring-2 focus:ring-cyan-300"
+            type="text"
+            placeholder="Your name"
+          />
+        </div>
+
+        {/* Email */}
+        <div className="flex flex-col">
+          <label className="font-semibold mb-1">Email</label>
+          <input
+            className="bg-white/80 text-black px-4 py-2 rounded-lg outline-none
+                       focus:ring-2 focus:ring-cyan-300"
+            type="email"
+            placeholder="Your email"
+          />
+        </div>
+
+        {/* Message */}
+        <div className="flex flex-col">
+          <label className="font-semibold mb-1">Message</label>
+          <textarea
+            className="bg-white/80 text-black px-4 py-2 rounded-lg h-28 resize-none outline-none 
+                       focus:ring-2 focus:ring-cyan-300"
+            placeholder="Write your message…"
+          />
+        </div>
+
+        {/* Button */}
+        <button
+          className="w-full bg-cyan-500 hover:bg-cyan-600 transition-all py-3 rounded-xl 
+                     font-bold text-black active:scale-95"
+        >
+          Send Message
+        </button>
+      </div>
+
+      {/* Bottom Copy */}
+      <p className="text-gray-500 text-sm mt-10">
+        © {new Date().getFullYear()} Helix — All Rights Reserved.
+      </p>
+
     </footer>
   );
 };

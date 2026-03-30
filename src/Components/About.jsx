@@ -1,22 +1,24 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
   return (
     <div className="bottom-3 relative overflow-y-auto  w-10/12 h-70 bg-white/10 backdrop-blur-md rounded-xl shadow-md border border-white/30 p-6">
-      <p className= " text-white text-lg font-semibold">
-        I am a final-year BCA student with a strong passion for front-end development, specializing in building responsive and user-friendly web applications using **React.js**. I have hands-on experience with **state management tools** like Redux and Context API, and a deep understanding of modern JavaScript (ES6+), HTML5, and CSS3.
-
-        Driven by clean code and UI/UX principles, I enjoy turning complex problems into intuitive, accessible, and interactive web interfaces. My goal is to secure a challenging **Front-End Developer** or **React Developer** role where I can contribute to impactful projects and grow as a professional in a dynamic tech environment.
-
-        I'm currently open to internships, freelance projects, or full-time opportunities in front-end development.
-
-        **Tech Stack:** React.js, Redux, Context API, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Git/GitHub  
-        **Soft Skills:** Problem-solving, Team collaboration, Time management, Quick learner
-
+      <p className=" text-white text-lg font-semibold">
+        I am a final-year BCA student and a passionate Front-End Developer with
+        a strong focus on building responsive, high-performance, and
+        user-centric web applications using React.js. I specialize in crafting
+        clean, scalable, and maintainable code while following modern UI/UX
+        principles to deliver seamless digital experiences. With hands-on
+        experience in state management using Redux and Context API, I excel at
+        managing complex application states efficiently. I have a solid command
+        of JavaScript (ES6+), HTML5, and CSS3, enabling me to transform creative
+        ideas into fully functional and visually appealing interfaces. I am
+        driven by curiosity, continuous learning, and a strong problem-solving
+        mindset. I enjoy breaking down complex challenges and turning them into
+        simple, intuitive, and accessible solutions.
       </p>
     </div>
+  );
+};
 
-  )
-}
-
-export default About
+export default About;
