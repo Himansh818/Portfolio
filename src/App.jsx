@@ -3,7 +3,7 @@ import './ComponentsCss/App.css'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Project from './Components/Project'
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter ,Routes, Route } from 'react-router-dom'
 import About from './Components/About'
 import Footer from './Components/Footer'
 import Strap from './Components/Strap'
@@ -44,7 +44,7 @@ useEffect(() => {
         <div className="navbar absolute top-0 w-full flex justify-center z-20">
           <Navbar />
         </div>
-
+<BrowserRouter>
         {/* Routes - show only one at a time */} 
         <Routes>
           <Route path="/" element={
@@ -67,6 +67,7 @@ useEffect(() => {
             </div>
           } />
         </Routes>
+</BrowserRouter>
       </div>
     // </Router>
     )}
